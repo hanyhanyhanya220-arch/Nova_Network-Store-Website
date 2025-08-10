@@ -1,0 +1,224 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Nova Network Store</title>
+<style>
+  body {
+    margin: 0;
+    background-color: #000000;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #eee;
+    direction: rtl;
+  }
+  header {
+    background-color: #3a0066; /* بنفسجي غامق */
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 28px;
+    color: #fff;
+    letter-spacing: 1.5px;
+    box-shadow: 0 2px 10px rgba(58, 0, 102, 0.7);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+  .header-logo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+  }
+  .banner img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    display: block;
+    margin: 15px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #7e50c8;
+  }
+  .discord {
+    text-align: center;
+    margin: 15px 0;
+    font-size: 18px;
+  }
+  .discord a {
+    color: #7289da;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  h2 {
+    text-align: center;
+    margin: 30px 0 20px 0;
+    font-weight: 700;
+    font-size: 24px;
+    color: #d1b3ff;
+    text-shadow: 0 0 5px #a04edd;
+  }
+  .container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 15px 40px 15px;
+  }
+  .ranks {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .rank {
+    background: linear-gradient(135deg, #4a007f, #24004a);
+    border-radius: 10px;
+    width: 180px;
+    padding: 20px 15px 25px;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 1px;
+    box-shadow: 0 0 10px #5a00a1;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .rank:hover {
+    box-shadow: 0 0 25px #a551ff;
+    transform: scale(1.07);
+  }
+  .rank-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 12px;
+    object-fit: contain;
+  }
+  .rank-name {
+    font-size: 22px;
+    margin-bottom: 8px;
+  }
+  .price {
+    margin-top: auto;
+    font-weight: 700;
+    font-size: 20px;
+    text-shadow: 0 0 7px #7e50c8;
+  }
+  .products {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .product {
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    width: 180px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 0 10px #3a3a3a;
+    cursor: default;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .product img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+  .product .name {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  .product .price {
+    font-weight: 700;
+    font-size: 18px;
+    color: #cfcfcf;
+  }
+</style>
+</head>
+<body>
+<header>
+  <img src="images/server_logo.png" alt="شعار السيرفر" class="header-logo" />
+  Nova Network Store
+</header>
+
+<div class="banner">
+  <img src="images/server_banner.png" alt="بانر السيرفر" />
+</div>
+
+<div class="container">
+  <div class="discord">
+    انضم للديسكورد: <a href="https://discord.gg/zGkrEf3d" target="_blank" rel="noopener noreferrer">https://discord.gg/zGkrEf3d</a>
+  </div>
+
+  <h2>الرتب</h2>
+  <div class="ranks">
+    <div class="rank vip">
+      <img src="images/vip.png" alt="VIP Rank" class="rank-icon" />
+      <div class="rank-name">VIP</div>
+      <div class="price">25 جنيه</div>
+    </div>
+    <div class="rank vipplus">
+      <img src="images/vipplus.png" alt="VIP+ Rank" class="rank-icon" />
+      <div class="rank-name">VIP+</div>
+      <div class="price">50 جنيه</div>
+    </div>
+    <div class="rank mvp">
+      <img src="images/mvp.png" alt="MVP Rank" class="rank-icon" />
+      <div class="rank-name">MVP</div>
+      <div class="price">70 جنيه</div>
+    </div>
+    <div class="rank mvpplus">
+      <img src="images/mvpplus.png" alt="MVP+ Rank" class="rank-icon" />
+      <div class="rank-name">MVP+</div>
+      <div class="price">85 جنيه</div>
+    </div>
+    <div class="rank novaplus">
+      <img src="images/novaplus.png" alt="Nova+ Rank" class="rank-icon" />
+      <div class="rank-name">Nova+</div>
+      <div class="price">100 جنيه</div>
+    </div>
+  </div>
+
+  <h2>المنتجات</h2>
+  <div class="products">
+    <div class="product">
+      <img src="images/crystal_pickaxe.png" alt="Crystal Pickaxe" />
+      <div class="name">Crystal Pickaxe</div>
+      <div class="price">25 جنيه</div>
+    </div>
+    <div class="product">
+      <img src="images/gold_crate.png" alt="Gold Crate" />
+      <div class="name">Gold Crate</div>
+      <div class="price">25 جنيه</div>
+    </div>
+    <div class="product">
+      <img src="images/diamond_crate.png" alt="Diamond Crate" />
+      <div class="name">Diamond Crate</div>
+      <div class="price">50 جنيه</div>
+    </div>
+    <div class="product">
+      <img src="images/emerald_crate.png" alt="Emerald Crate" />
+      <div class="name">Emerald Crate</div>
+      <div class="price">75 جنيه</div>
+    </div>
+    <div class="product">
+      <img src="images/heavenly_sword.png" alt="Heavenly Sword" />
+      <div class="name">Heavenly Sword</div>
+      <div class="price">50 جنيه</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
